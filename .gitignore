@@ -1,0 +1,23 @@
+# Ignore GitHub self-hosted runner folder
+/actions-runner/
+
+# Ignore Node.js and npm local installs
+externals/
+
+# Ignore all credential, environment, and log files
+.credentials
+.credentials_rsaparams
+.env
+.path
+.runner
+_diag/
+
+# Ignore GitHub Actions runner files
+actions-runner-linux-x64-2.323.0.tar.gz
+runner/
+
+# Ignore binaries and DLL files
+bin/
+
+# Ignore all files in actions-runner (add any subdirectories too if needed)
+actions-runner/*
