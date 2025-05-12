@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 7px 30px;
+  background: linear-gradient(135deg,
+      rgba(54, 31, 123, 1),
+      rgba(93, 74, 148, 1));
+  position: relative;
+  margin: 15px auto;
+  width: 90%;
+  border-radius: 15px;
+  border: 1.5px solid #0e082391;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 0% auto;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-links a:hover {
+  color: rgb(126, 111, 184);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn-signin {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  border: 2px solid #0e0823ce;
+  background-color: rgba(14, 8, 35, 0.788);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auth-buttons .btn-signin:hover {
+  background-color: rgb(49, 28, 124);
+  border: 2px solid rgb(28, 16, 70);
+}
+
+.auth-buttons .btn-register {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  border: 2px solid #0e0823ce;
+  background-color: rgba(93, 74, 148, 1);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auth-buttons .btn-register:hover {
+  background-color: rgb(49, 28, 124);
+  border: 2px solid rgb(28, 16, 70);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.nav-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-icon:hover .nav-image {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+  }
+}
+
+.logo-text {
+  color: inherit;
+  /* Or your desired color */
+  text-decoration: none;
+  /* Remove underline if it's applied */
+}
